@@ -1,14 +1,14 @@
 ---
 links:
-  - title: Netlify CMS
-    url: "https://www.netlifycms.org/"
-    desc: Open source content management for your Git workflow
-  - title: Eleventy
-    url: "https://www.11ty.dev/"
-    desc: Eleventy is a simpler static site generator.
-  - title: Alpine.js
-    url: "https://github.com/alpinejs/alpine"
-    desc: A minimal framework for composing JavaScript behavior in your markup.
-  - title: Tailwind CSS
-    url: "https://tailwindcss.com/"
-    desc: A utility-first CSS framework for rapidly building custom designs.
+  - title: Academic Excellence
+    desc: >+ 
+      Our school district must continue to grow and improve. Supporting our teachers and staff to enable all students to achieve their best results is a critical function of the school board. 
+  - title: Academic Integrity
+    desc: >+ 
+      Students are able to excel when they have access to all opportunities. Our school district must support the freedom for our students to learn all that they can and never bow to banning books. Parents already have district provided tools to manage their individual preferences for their own students and cannot infirnge upon others rights.  
+  - title: Student Support
+    desc: >+ 
+      I will support all DVSD students in their rights to a safe and vibrant school experience. Providing the best cirriculum and materials as well as a rich set of extracirricular activities will give our students the ability to succeed in a competitive world.  
+  - title: Responsible Spending
+    desc: >+ 
+      Maintaining a responsible budget is a key duty of the school baord. I will work to ensure that the Delaware Valley School District maintains the public trust in spending and work to ensure that school taxes are used most effectively.
