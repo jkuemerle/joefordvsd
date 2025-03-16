@@ -1,1 +1,187 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="x-ua-compatible" content="ie=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Joe for DVSD</title><link rel="stylesheet" type="text/css" href="/static/css/style.css"></head><body><div class="lg:fixed w-full"><nav class="flex items-center justify-center lg:justify-between flex-wrap p-6 lg:px-0 container mx-auto" x-data="{ isOpen: false }" @keydown.escape="isOpen = false" @click.away="isOpen = false"><div class="flex items-center"><a href="/" class="text-indigo-500 font-bold text-lg"></a></div><button @click="isOpen = !isOpen" type="button" class="ml-auto block lg:hidden px-2 text-primary-500 hover:text-primary-500 focus:outline-none focus:text-primary-500" :class="{ 'transition transform-180': isOpen }" aria-label="Menu"><svg class="h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path x-show="isOpen" fill-rule="evenodd" clip-rule="evenodd" d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"/><path x-show="!isOpen" fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/></svg></button><div class="w-full flex-grow lg:flex lg:items-center lg:w-auto text-center" :class="{ 'block shadow-3xl': isOpen, 'hidden': !isOpen }" x-show.transition="true"><ul class="pt-6 lg:pt-0 list-reset lg:flex justify-end flex-1 items-center"><li class="nav__item mr-3"><a @click="isOpen = false" class="text-ml inline-block text-gray-500 no-underline hover:text-indigo-500 py-2 px-4" href="/">Home</a></li><li class="nav__item mr-3"><a @click="isOpen = false" class="text-ml inline-block text-gray-500 no-underline hover:text-indigo-500 py-2 px-4" href="/blog">News</a></li><li class="nav__item mr-3"><a @click="isOpen = false" class="text-ml inline-block text-gray-500 no-underline hover:text-indigo-500 py-2 px-4" href="/about">About</a></li></ul></div></nav></div><div class="container mx-auto lg:h-screen flex-col justify-center items-center"><h1>Welcome to <strong class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">Joe for DVSD</strong></h1><div class="container flex text-center"><h3 class="text-center">Joe Kuemerle for Delaware Valley School District Board of Directors</h3></div><div class="container flex mx-auto"><h4>My name is Joe Kuemerle and I am running to be one of the next directors of the Delaware Valley School District Board of Directors. I am a parent of two DVSD graduates, an active member of the community and dedciated to improving our school district.</h4></div><div class="flex mx-auto"><p>My major platform goals are listed below.</p></div><div class="w-full max-w-2xl grid grid-cols-1 lg:grid-cols-2 gap-4 my-8 px-4 lg:mx-0"><a href="" target="_blank" class="p-5 border rounded border-gray-200 hover:border-purple-400"><h3>Academic Excellence</h3><p>Our school district must continue to grow and improve. Supporting our teachers and staff to enable all students to achieve their best results is a critical function of the school board.</p></a><a href="" target="_blank" class="p-5 border rounded border-gray-200 hover:border-purple-400"><h3>Academic Integrity</h3><p>Students are able to excel when they have access to all opportunities. Our school district must support the freedom for our students to learn all that they can and never bow to banning books. Parents already have district provided tools to manage their individual preferences for their own students and cannot infirnge upon others rights.</p></a><a href="" target="_blank" class="p-5 border rounded border-gray-200 hover:border-purple-400"><h3>Student Support</h3><p>I will support all DVSD students in their rights to a safe and vibrant school experience. Providing the best cirriculum and materials as well as a rich set of extracirricular activities will give our students the ability to succeed in a competitive world.</p></a><a href="" target="_blank" class="p-5 border rounded border-gray-200 hover:border-purple-400"><h3>Responsible Spending</h3><p>Maintaining a responsible budget is a key duty of the school board. I will work to ensure that the Delaware Valley School District maintains the public trust in spending and work to ensure that school taxes are used most effectively.</p></a></div><p>Please reach out if you have questions or concerns.</p></div><footer class="fixed bottom-0 text-center w-full py-4"><small class="text-gray-500">Copyright © Joe for DVSD 2024 <a href="https://joefordvsd.com/" target="_blank" class="underline">Joe Kuemerle</a> •</small></footer><script src="/static/js/alpine.js"></script><script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joe for DVSD - Joe for DVSD</title>
+
+    <link rel="stylesheet" href="/dist/app.css" />
+
+    
+
+
+<meta name="description" content="Joe Kuemerle for Delaware Valley School District Director.">
+
+
+<meta property="og:site_name" content="Joe for DVSD">
+<meta property="og:title" content="Joe for DVSD">
+<meta property="og:description" content="Joe Kuemerle for Delaware Valley School District Director.">
+<meta property="og:url" content="http://localhost:8080/">
+<meta property="og:locale" content=""><meta property="og:image" content="http://localhost:8080/assets/images/open-graph/teaser.jpeg">
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Joe for DVSD">
+<meta name="twitter:description" content="Joe Kuemerle for Delaware Valley School District Director."><meta property="twitter:image" content="http://localhost:8080/assets/images/open-graph/teaser.jpeg">
+
+
+
+
+<link rel="icon" href="/assets/favicons/favicon.ico">
+
+
+
+  </head>
+
+  <body style="background-color: #E9E9E9">
+    <!-- skiplinks -->
+    <a href="#main" class="visually-hidden-focusable">Skip to main content</a>
+
+    <div class="container py-4">
+  <header class="pb-3 mb-4 border-bottom">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" class="me-2" viewBox="0 0 118 94" role="img">
+            <title>Joe for DVSD</title>
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z"
+              fill="currentColor"
+            ></path>
+          </svg>
+          <span class="fs-4">Joe for DVSD</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+
+
+
+
+<ul class="navbar-nav ms-auto"><li class="nav-item">
+            <a class="nav-link active"
+                href="#main"
+                aria-current="page" >
+                Home
+            </a></li><li class="nav-item">
+            <a class="nav-link"
+                href="/pages/about/"
+                >
+                About
+            </a></li><li class="nav-item">
+            <a class="nav-link"
+                href="/pages/news/"
+                >
+                News
+            </a></li></ul>
+
+
+</div>
+      </div>
+    </nav>
+  </header>
+</div>
+
+
+    <main id="main">
+      <div class="container py-4">
+        
+<div class="p-5 mb-4 bg-light rounded-3">
+  <div class="container-fluid py-2">
+    <h1 class="display-5 fw-bold">Joe for DVSD</h1>
+    <p class="col-md-10 fs-4 mb-0 pt-2">
+      My name is Joe Kuemerle and I am running to be one of the next directors of the Delaware Valley School District Board. 
+      I am a parent of two DVSD graduates, an active member of the community and dedicated to improving our school district. 
+      My major platform goals are listed below.
+    </p>
+    <p class="mt-4">
+      <small>Status: Always a bit "work in progress", but good to go.</small>
+    </p>
+  </div>
+</div>
+
+<div class="row align-items-md-stretch">
+  <div class="col-md-6 mt-3">
+    <div class="h-100 p-5 text-white rounded-3" style="background-color: #3148F6">
+      <h2>Academic Excellence</h2>
+      <p>
+        Our school district must continue to grow and improve. Supporting our teachers and staff to enable all students to achieve their best results is a critical function of the school board.       </p>
+    </div>
+  </div>
+  <div class="col-md-6 mt-3">
+    <div class="h-100 p-5 border rounded-3" style="background-color: #3148F6">
+      <h2>Academic Integrity</h2>
+      <p>
+        Students are able to excel when they have access to all opportunities. Our school district must support the freedom for our students to learn all that they can and never bow to banning books. Parents already have district provided tools to manage their individual preferences for their own students and cannot infringe upon others rights.
+      </p>
+    </div>
+  </div>
+  <div class="col-md-6 mt-3">
+    <div class="h-100 p-5 border rounded-3" style="background-color: #3148F6">
+      <h2>Student Support</h2>
+      <p>
+        I will support all DVSD students in their rights to a safe and vibrant school experience. Providing the best cirriculum and materials as well as a rich set of extracirricular activities will give our students the ability to succeed in a competitive world.
+      </p>      
+    </div>
+  </div>
+  <div class="col-md-6 mt-3">
+    <div class="h-100 p-5 text-white rounded-3" style="background-color: #3148F6">
+      <h2>Responsible Spending</h2>
+      <p>
+        Maintaining a responsible budget is a key duty of the school board. I will work to ensure that the Delaware Valley School District maintains the public trust in spending and work to ensure that school taxes are used most effectively.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="row mt-3">
+  <div class="col-12">
+    <div class="img-fit-cover-container rounded-3 bg-light">
+      <picture>
+      <source type="image/webp" srcset="/img/ZNWYb9bTZl-600.webp 600w, /img/ZNWYb9bTZl-1200.webp 1200w" sizes="100vw">
+  <source type="image/jpeg" srcset="/img/ZNWYb9bTZl-600.jpeg 600w, /img/ZNWYb9bTZl-1200.jpeg 1200w" sizes="100vw">
+      <img
+        src="/img/ZNWYb9bTZl-600.jpeg"
+        width="1200"
+        height="800"
+        alt="DVSD Graduation"
+        loading="lazy"
+        decoding="async">
+    </picture>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-12 py-5 text-center">
+    Please reach out if you have any questions.
+  </div>
+</div>
+
+<!-- for debug: {&quot;title&quot;:&quot;Joe for DVSD&quot;,&quot;description&quot;:&quot;Wesite for Joe Kuemerle for Delaware Valley School District Director.&quot;,&quot;locale&quot;:&quot;en&quot;,&quot;baseUrl&quot;:&quot;http://localhost:8080&quot;,&quot;pathPrefix&quot;:&quot;/&quot;} {&quot;date&quot;:&quot;2025-03-16T20:31:07.687Z&quot;,&quot;inputPath&quot;:&quot;./src/index.njk&quot;,&quot;fileSlug&quot;:&quot;&quot;,&quot;filePathStem&quot;:&quot;/index&quot;,&quot;outputFileExtension&quot;:&quot;html&quot;,&quot;templateSyntax&quot;:&quot;njk&quot;,&quot;url&quot;:&quot;/&quot;,&quot;outputPath&quot;:&quot;_site/index.html&quot;} {&quot;lang&quot;:&quot;en&quot;,&quot;title&quot;:&quot;Joe for DVSD&quot;,&quot;image&quot;:&quot;/assets/images/open-graph/teaser.jpeg&quot;,&quot;description&quot;:&quot;Joe Kuemerle for Delaware Valley School District Director.&quot;}-->
+
+      </div>
+    </main>
+
+    <footer class="container">
+  <p class="float-end"><a href="#">Back to top</a></p>
+  <p>
+    <a href="/pages/imprint">Imprint</a> · 
+  </p>
+</footer>
+
+    <script type="text/javascript" src="/dist/app.js"></script>
+  </body>
+</html>
