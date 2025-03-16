@@ -1,60 +1,95 @@
-# Neat Starter
+# 11ty-plain-bootstrap5
 
-Starter Template for **N**etlify CMS, **E**leventy, **A**lpine JS & **T**ailwind CSS
+[![Build and Deploy](https://github.com/mandrasch/11ty-plain-bootstrap5/actions/workflows/build-deploy.yaml/badge.svg)](https://github.com/mandrasch/11ty-plain-bootstrap5/actions/workflows/build-deploy.yaml)
 
-## Live Demo
+Minimalistic template for the awesome static site generator [Eleventy/11ty](https://www.11ty.dev/), just
 
-[https://neat-starter.netlify.app/](https://neat-starter.netlify.app/)
+- [Bootstrap 5](https://www.npmjs.com/package/bootstrap) (via npm)
+- [Laravel Mix](https://www.npmjs.com/package/laravel-mix)\* for SCSS / JS compilation (incl. Autoprefixer)
 
-### Technologies used:
+_\* Laravel Mix is a wrapper around webpack, it is purely NodeJS, no PHP involved ;-)_
 
-- [Netlify CMS](https://www.netlifycms.org/)
-- [Eleventy](https://www.11ty.dev/)
-- [Alpine.js](https://github.com/alpinejs/alpine)
-- [Tailwind CSS](https://tailwindcss.com/)
+Plugins used (you don't have to keep them):
 
-| ![image](https://user-images.githubusercontent.com/1884712/93762662-a62e4700-fc2d-11ea-9b2c-fda9f503402b.png) |
-| ------------------------------------------------------------------------------------------------------------- |
+- [eleventy-navigation](https://www.11ty.dev/docs/plugins/navigation/)
+- [eleventy-img](https://www.11ty.dev/docs/plugins/image/)
+- [eleventy-rss](https://www.11ty.dev/docs/plugins/rss/) (to get absolute URLs for social media open graph tags)
 
+## Live demo
 
-<a href="https://app.netlify.com/start/deploy?repository=https://github.com/surjithctly/neat-starter&amp;stack=cms"><img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" /></a>
+- https://mandrasch.github.io/11ty-plain-bootstrap5/
 
-## Getting Started
+[![Open in Gitpod](gitpod.svg)](https://gitpod.io/#https://github.com/mandrasch/11ty-plain-bootstrap5)
 
-Detailed instructions are available in my blog. [Check it out](https://blog.surjithctly.in/neat-stack-create-a-static-website-with-netlify-cms-eleventy-alpinejs-and-tailwindcss)
+## Usage
 
-### 1\. Clone this Repository
+**Install via:**
 
-```
-git clone https://github.com/surjithctly/neat-starter.git
-```
+- `npm install`
 
-### 2\. Navigate to the directory
+**Start local development with**
 
-```
-cd neat-starter
-```
+- `npm run dev`
 
-### 3\. Install dependencies
+Preview runs on http://localhost:8080/.
 
-```
-npm install
-```
+**Where to edit?**
 
-### 4\. Build the project to generate the first CSS
+- Work with files in `src/`-folder
+- Homepage: `src/index.njk`, Config: `.eleventy.js`
+- **Don't** edit `_site/` folder (automatically generated)
 
-This step is only required the very first time.
+**Generate a static build with**
 
-```
-npm run build
-```
+- `npm run build`
 
-### 5\. Run Eleventy
+_Advice: `BASE_URL` should be set as node env variable for open graph image support (they need full instead of relative URLs. You can strip them out as well in `meta.njk`. See `.github/workflows/build-deploy.yaml` for information. Currently it defaults to http://localhost:8080 if no env var is set.)_
 
-```
-npm run start
-```
+## Credits
 
-## Author
+- Big thanks to [bergwerk/11ty-mix](https://github.com/bergwerk/11ty-mix) by [@marvinhuebner](https://github.com/marvinhuebner) for example of using Laravel Mix!
+- Some icons used of https://icons.getbootstrap.com/ (included via svg inline, MIT license)
+- Inspired by https://github.com/maxboeck/eleventastic (MIT license)
+- https://5balloons.info/setting-up-bootstrap-5-workflow-using-laravel-mix-webpack/
+- Learned a lot from [Eleventy (11ty) Static HTML Theme Conversion (YouTube)](https://www.youtube.com/watch?v=z-o1W9ijUhI&list=PLOSLUtJ_J3rrJ1R1qEf8CCEpV3GgbJGNr)
+- Layout based on official bootstrap [Jumbotron Example](https://getbootstrap.com/docs/5.0/examples/)
 
-Surjith S M ( [@surjithctly](https://surjithctly.in/) )
+## Alternatives
+
+- https://11straps.com/
+- https://github.com/mesinkasir/eleventyblog
+- See all starters: https://www.11ty.dev/docs/starter/
+
+## Technical background:
+
+Bootstrap information for npm/sass:
+
+- https://getbootstrap.com/docs/5.2/getting-started/download/#source-files
+- https://getbootstrap.com/docs/5.2/customize/sass/
+
+Sustainable Web Design:
+
+- Comment out not needed bootstrap components in `src/scss/app.scss`
+
+## TODOs
+
+Roadmap:
+
+- [ ] Add vite support (https://www.11ty.dev/docs/server-vite/), eleventy v2 needed, see e.g. https://github.com/matthiasott/eleventy-plus-vite
+
+Ideas:
+
+- [ ] Add support for Stackblitz (https://stackblitz.com/github/mandrasch/11ty-plain-bootstrap5)
+- [ ] Add more demo content with image/gallery examples
+- [ ] Add local google fonts example
+- [ ] Improve handling of absolute URLs for open graph image information and BASE_URL settings
+- [ ] Add sitemap.xml (See https://github.com/maxboeck/eleventastic)
+- [ ] Add minimalistisc cache busting via timestamp https://rob.cogit8.org/posts/2020-10-28-simple-11ty-cache-busting/ or https://laravel.com/docs/9.x/mix#versioning-and-cache-busting (would require to read mix-manifest.json file in build step?)
+- [ ] Check a11y with WAVE, aXe, etc. or use automated workflow, e.g. pa11y https://rodneylab.com/sveltekit-accessibility-testing
+- [ ] Add PWA features (?)
+
+## License
+
+MIT license
+
+_(License is for compatibility purposes with eleventys license only. You don't have to attribute my personal additions, I did mostly boring config stuff. Please be aware that Eleventy, Bootstrap, Bootstrap Icons, Laravel Mix and eleventy plugins used are licensed as MIT license.)_

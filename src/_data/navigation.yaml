@@ -1,8 +1,0 @@
----
-items:
-  - text: Home
-    url: "/"
-  - text: News
-    url: "/blog"
-  - text: About
-    url: "/about"
