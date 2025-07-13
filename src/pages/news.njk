@@ -7,4 +7,5 @@ eleventyNavigation:
 
 <h2>News</h2>
 
-Joe for DVSD news coming soom!
+{% set postslist = collections.post %}
+{% include "postslist.njk" %}
